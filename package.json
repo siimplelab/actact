@@ -1,5 +1,5 @@
 {
-  "name": "moms-hub",
+  "name": "actact",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siimplelab/moms-hub.git"
+    "url": "git+https://github.com/siimplelab/actact.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/siimplelab/moms-hub/issues"
+    "url": "https://github.com/siimplelab/actact/issues"
   },
-  "homepage": "https://github.com/siimplelab/moms-hub#readme",
+  "homepage": "https://github.com/siimplelab/actact#readme",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
