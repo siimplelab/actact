@@ -14,6 +14,7 @@ function css() {
         .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
         .pipe(dest('src/css'))
+        .pipe(dest('_site/src/css'))
         // browser sync의 특수 기능인 스트림 기능 사용
         .pipe(browser.stream());
 }
@@ -23,12 +24,12 @@ function server() {
         // inject css changes without the page being reloaded
         injectChanges: true,
         // proxy
-        proxy: "localhost:4000",
+        proxy: "127.0.0.1:4000",
         // the port
         port: 1234
     });
     watch('src/scss/**/*.scss', css);
-    watch('_site/**/*.css').on('change', browser.reload);
+    // watch('_site/src/css/**/*.css').on('change', browser.reload);
     watch('_site/**/*.html').on('change', browser.reload);
 }
 
