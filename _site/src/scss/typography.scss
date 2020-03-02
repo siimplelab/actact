@@ -1,0 +1,155 @@
+
+/* 모든 개체 선택이 리소스에 부담을 준다면 주요 텍스트 포함 개체만 선택 */
+/* Basic HTML */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+/* Formating */
+abbr,
+address,
+b,
+bdi,
+bdo,
+blockquote,
+cite,
+code,
+del,
+dfn,
+em,
+i,
+ins,
+kbd,
+mark,
+meter,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+small,
+strong,
+sub,
+sup,
+template,
+time,
+u,
+var,
+wbr,
+/* Forms and Input */
+form,
+input,
+textarea,
+button,
+select,
+optgroup,
+option,
+label fieldset,
+legend,
+datalist,
+output,
+/* Images */
+img,
+map,
+area,
+canvas,
+figcaption,
+figure,
+picture,
+svg,
+/* Links */
+a,
+link,
+nav,
+/* Lists */
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+/* Tables */
+table,
+caption,
+th,
+tr,
+td,
+thead,
+tbody,
+tfoot,
+col,
+colgroup,
+/* Styles and Semantics */
+div,
+span,
+header,
+footer,
+main,
+section,
+article,
+aside,
+details,
+dialog,
+summary,
+data {
+    letter-spacing: $defaultLetterSpacing;
+    word-break: $defaultWordBreakWord;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.sub-text {
+    font-size: 0.8125rem;
+}
+
+.text-color__pink {
+    color: $pink;
+}
+
+.text-color__light-pink {
+    color: $light-pink;
+}
+
+.text-color__light-black {
+    color: $light-black;
+}
+
+.sub-text {
+    font-size: 0.8125rem;
+    white-space: normal;
+    color: $lighter-gray;
+
+    strong {
+        display: block;
+    }
+}
