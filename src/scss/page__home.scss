@@ -1,0 +1,34 @@
+.page__home {
+    .main-item {
+        // max-width: 1360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10.25rem;
+        margin-bottom: 10.25rem;
+
+        .image {
+            margin-bottom: 1.875rem;
+        }
+
+        .caption {
+            h3 {
+                font-size: 2.25rem;
+            }
+
+            span {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .main-item__daejeonsi {
+        
+    }
+
+    .home-header {
+        padding-top: 5rem;
+        svg {
+            max-width: 36.25rem;    
+        }
+    }
+}

@@ -56,3 +56,15 @@ a:hover {
     font-size: 1.5rem;
   }
 }
+
+.btn__to-top {
+  cursor: pointer;
+  position: fixed;
+  left: 3rem;
+  bottom: 3rem;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

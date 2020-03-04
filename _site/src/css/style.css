@@ -9893,4 +9893,44 @@ a:hover {
   font-size: 1.5rem;
 }
 
+.btn__to-top {
+  cursor: pointer;
+  position: fixed;
+  left: 3rem;
+  bottom: 3rem;
+  opacity: 1;
+}
+
+.btn__to-top:hover {
+  opacity: 0.8;
+}
+
+.page__home .main-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10.25rem;
+  margin-bottom: 10.25rem;
+}
+
+.page__home .main-item .image {
+  margin-bottom: 1.875rem;
+}
+
+.page__home .main-item .caption h3 {
+  font-size: 2.25rem;
+}
+
+.page__home .main-item .caption span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.page__home .home-header {
+  padding-top: 5rem;
+}
+
+.page__home .home-header svg {
+  max-width: 36.25rem;
+}
+
 /*# sourceMappingURL=style.css.map */
