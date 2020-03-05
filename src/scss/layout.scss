@@ -68,3 +68,40 @@ a:hover {
     opacity: 0.8;
   }
 }
+
+.actact-logo-animated {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    margin-left: -184px;
+    z-index: 0;
+    top: 25rem;
+
+  .logo-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation: logoTextRotate;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .logo-globe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes logoTextRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) ;
+  }
+}

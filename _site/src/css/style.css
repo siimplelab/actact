@@ -9905,11 +9905,61 @@ a:hover {
   opacity: 0.8;
 }
 
+.actact-logo-animated {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  margin-left: -184px;
+  z-index: 0;
+  top: 25rem;
+}
+
+.actact-logo-animated .logo-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: logoTextRotate;
+          animation: logoTextRotate;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.actact-logo-animated .logo-globe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes logoTextRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logoTextRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .page__home .main-item {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10.25rem;
-  margin-bottom: 10.25rem;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .page__home .main-item .image {
@@ -9923,6 +9973,10 @@ a:hover {
 .page__home .main-item .caption span {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.page__home .main-item.main-item--last {
+  margin-bottom: 8rem;
 }
 
 .page__home .home-header {
