@@ -3,7 +3,7 @@
         // max-width: 1360px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10.25rem;
+        margin-top: 8rem;
         margin-bottom: 0;
         position: relative;
         z-index: 1;
@@ -25,6 +25,10 @@
 
         &.main-item--last {
             margin-bottom: 8rem;
+        }
+
+        &.main-item--first {
+            margin-top: 10.25rem;
         }
     }
     

@@ -16,3 +16,10 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
+
+// parallax
+
+// $('.parallax-window').parallax({
+//     naturalWidth: 600,
+//     naturalHeight: 400
+//   });

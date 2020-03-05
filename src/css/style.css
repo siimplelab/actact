@@ -9906,7 +9906,7 @@ a:hover {
 }
 
 .actact-logo-animated {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   z-index: 0;
@@ -9956,7 +9956,7 @@ a:hover {
 .page__home .main-item {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10.25rem;
+  margin-top: 8rem;
   margin-bottom: 0;
   position: relative;
   z-index: 1;
@@ -9977,6 +9977,10 @@ a:hover {
 
 .page__home .main-item.main-item--last {
   margin-bottom: 8rem;
+}
+
+.page__home .main-item.main-item--first {
+  margin-top: 10.25rem;
 }
 
 .page__home .home-header {
