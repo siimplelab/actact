@@ -9991,4 +9991,39 @@ a:hover {
   max-width: 36.25rem;
 }
 
+.page__exhibition .content-header {
+  background: #fff;
+  color: #333;
+}
+
+.page__exhibition .content-body.content-body__works {
+  background: #000;
+}
+
+.page__exhibition .content-body.content-body__works .exhibition-title {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.page__exhibition .content-body.content-body__works .exhibition-title img {
+  width: 240px;
+  height: 64.5px;
+}
+
+.page__exhibition .content-body.content-body__works .exhibition-title span {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.page__exhibition .content-body.content-body__works h4 {
+  color: #F39200;
+}
+
+.page__exhibition .content-body.content-body__authors {
+  background: #fff;
+  color: #333;
+}
+
 /*# sourceMappingURL=style.css.map */

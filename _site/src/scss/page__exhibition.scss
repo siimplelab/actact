@@ -1,0 +1,35 @@
+.page__exhibition {
+    .content-header {
+        background: $white;
+        color: $light-black;
+    }
+    .content-body.content-body__works {
+        background: $black;
+
+        .exhibition-title {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+            img {
+                width: 240px;
+                height: 64.5px;
+            }
+
+            span {
+                color: #fff;
+                font-weight: 300;
+                font-size: 1.5rem;
+            }
+        }
+
+        h4 {
+            color: $color-dajeonsi-orange;
+        }
+    }
+
+    .content-body.content-body__authors {
+        background: $white;
+        color: $light-black;
+    }
+}
