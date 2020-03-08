@@ -10,9 +10,12 @@
 
         .image {
             margin-bottom: 1.875rem;
+            transition: all 0.5s ease-in-out;
         }
 
         .caption {
+            transition: all 0.5s ease-in-out;
+
             h3 {
                 font-size: 2.25rem;
             }
@@ -30,14 +33,24 @@
         &.main-item--first {
             margin-top: 10.25rem;
         }
+
+        &:hover {
+            .image {
+                opacity: 0.8;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .caption {
+                text-decoration: underline;
+                transition: all 0.5s ease-in-out;
+            }
+        }
     }
     
-   
-
     .home-header {
         padding-top: 5rem;
         svg {
             max-width: 36.25rem;    
         }
     }
-}
+}   
