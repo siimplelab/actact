@@ -72,6 +72,30 @@ a:hover {
   }
 }
 
+.back-btn {
+
+  position: absolute;
+  top: 1rem;
+  background-color: $white;
+
+  a{ 
+    
+    color: $black; 
+
+    &:hover {
+      i {
+        opacity: 0.5; 
+      }
+      
+    }
+
+    i {
+      font-size: 3rem;
+    }
+  }
+  
+}
+
 .actact-logo-animated {
     position: fixed;
     left: 50%;

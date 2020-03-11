@@ -10,6 +10,14 @@ page-body-class: page__exhibition
 </div> -->
 <div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
     <div class="content-header px-3">
+        <div class="back-btn">
+            <a href="#" onclick="window.history.back()">
+                
+                <i class="material-icons">
+                    keyboard_backspace
+                </i>
+            </a>
+        </div>
         <div class="container-1660">
             <div class="row">
                 <div class="col-12 text-center">
@@ -94,7 +102,7 @@ page-body-class: page__exhibition
                 <div class="authors">
                    
                         {% for work in site.works %}
-                        <a href="#">
+                        <a href="#" class="{{  }}">
                         <div class="author row">
                            
                                 <div class="author-subject d-md-block d-none col-4">   

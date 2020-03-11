@@ -9908,6 +9908,24 @@ a:hover {
   opacity: 0.8;
 }
 
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  background-color: #fff;
+}
+
+.back-btn a {
+  color: #000;
+}
+
+.back-btn a:hover i {
+  opacity: 0.5;
+}
+
+.back-btn a i {
+  font-size: 3rem;
+}
+
 .actact-logo-animated {
   position: fixed;
   left: 50%;
@@ -10018,6 +10036,7 @@ a:hover {
 
 .page__exhibition .content-header .exhibition-logo__daejeonsi {
   max-width: 580px;
+  width: 100%;
 }
 
 .page__exhibition .content-body.content-body__works {
