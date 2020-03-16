@@ -27,7 +27,7 @@
         }
 
         &.main-item--last {
-            margin-bottom: 8rem;
+            padding-bottom: 8rem;
         }
 
         &.main-item--first {
@@ -36,7 +36,7 @@
 
         &:hover {
             .image {
-                opacity: 0.8;
+                // opacity: 0.8;
                 transition: all 0.5s ease-in-out;
             }
 

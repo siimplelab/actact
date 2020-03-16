@@ -10002,7 +10002,7 @@ a:hover {
 }
 
 .page__home .main-item.main-item--last {
-  margin-bottom: 8rem;
+  padding-bottom: 8rem;
 }
 
 .page__home .main-item.main-item--first {
@@ -10010,7 +10010,6 @@ a:hover {
 }
 
 .page__home .main-item:hover .image {
-  opacity: 0.8;
   transition: all 0.5s ease-in-out;
 }
 

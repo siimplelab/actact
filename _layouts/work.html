@@ -13,23 +13,23 @@
     <div class="content-body content-body__work px-3">
         <div class="row">
             <div class="col-sm-7">
-                <h1>꿈돌이 아나토미</h1>
-                <h2>KKUMDORI ANATOMY</h2>
+                <h1>{{ page.title-kr }}</h1>
+                <h2>{{ page.title }}</h2>
                 <p class="author">
                     <span class="author__name">
-                        김연주,  KIM YEONJU
+                        {{ page.designer-kr }}, {{ page.designer }}
                     </span>
                     <span class="author__mail">
-                        juiuii@naver.com
+                        {{ page.designer-email }}
                     </span>
                 </p>
                 <p class="work__desc">
-                    대전 엑스포 ‘93 공식 마스코트 우주 아기요정 ‘꿈돌이’. 우리에게 귀여운 캐릭터로만 인식되어 있는 꿈돌이의 이미지를 벗게 해주고 싶었습니다. 과학 기술,산업의 발전을 통한 인류의 평화를 추구하는 ‘대전광역시'를 지키는 괴수 꿈돌이로 재해석하였습니다. 항상 우리 곁에 살아 숨쉬고 있는 ‘괴수 꿈돌이’는 대전시의 꿈과 희망 또한 지키고 있습니다.
+                    {{ page.description }}
                 </p>
             </div>
             <div class="col-sm-5">
                 <div class="img-work-container">
-                    <img src="" alt="" class="img-fluid">
+                    <img src="{{ page.image-url }}" alt="{{ page.title-kr }}" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -38,10 +38,15 @@
     </div>
     <div class="button-navigator">
         <button class="btn-nav btn-prev-work">
-            이전
+            {% if page.previous.url %}
+            <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+          {% endif %}
+            
         </buttoh>
         <button class="btn-nav btn-next-work">
-            다음
+            {% if page.next.url %}
+            <a class="prev" href="{{page.next.url}}">&laquo; {{page.next.title}}</a>
+          {% endif %}
         </buttoh>
     </div>
     <div class="current-page">
