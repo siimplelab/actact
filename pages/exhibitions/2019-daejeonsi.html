@@ -29,7 +29,7 @@ page-body-class: page__exhibition
     <div class="content-body content-body__works px-3">
         <div class="container-1660">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="d-flex exhibition-title mb-4">
                         <img src="/src/images/daejeonsi_typelogo_orange.svg" alt="daejeonsi">
                         <span class="ml-3">(2019)</span>
@@ -78,9 +78,14 @@ page-body-class: page__exhibition
                     <h4>인쇄 후원</h4>
                     <p class="exhibition-sponsor">포썸</p>
                 </div>
-                <div class="col-6">
-                    <span>hi</span>
-                    <img src="" alt="">
+                <div class="col-md-6 exhibition-photos">
+                    <div class="img-container">
+                        <img class="img-fluid" src="/src/images/photos-daejeonsi/test.png" alt="">
+                        <img class="img-fluid" src="/src/images/photos-daejeonsi/test.png" alt="">
+                        <img class="img-fluid" src="/src/images/photos-daejeonsi/test.png" alt="">
+                        <img class="img-fluid" src="/src/images/photos-daejeonsi/test.png" alt="">
+                        <img class="img-fluid" src="/src/images/photos-daejeonsi/test.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,28 +106,30 @@ page-body-class: page__exhibition
                 </div>
                 <div class="authors">
                    
-                        {% for work in site.works %}
-                        <a href="#" class="{{  }}">
+                        {% for post in site.posts %}
+                        {% if post.tags contains "2019-daejeonsi" %}
+                        <a href="{{ post.permalink }}" class="">
                         <div class="author row">
-                           
+
                                 <div class="author-subject d-md-block d-none col-4">   
                                     <span>
-                                        {{ work.subject }}
+                                        {{ post.subject }}
                                     </span>
                                 </div>
                                 <div class="author-title col-md-4 col-6">   
                                     <span>
-                                        {{ work.title }}
+                                        {{ post.title }}
                                     </span>
                                 </div>
                                 <div class="author-designer col-md-4 col-6">   
                                     <span>
-                                        {{ work.designer }}
+                                        {{ post.designer }}
                                     </span>
                                 </div>
-                           
-                        </div>
-                    </a>
+                            
+                            </div>
+                        </a>
+                        {% endif %}
                         {% endfor %}
                     
                 </div>

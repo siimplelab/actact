@@ -109,4 +109,65 @@
             }
         }
     }
+
+    .exhibition-photos {
+        .img-container {
+            position: relative;
+            // min-height: 600px;
+
+            &>img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                max-width: 800px;
+                width: 100%;
+
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}) {
+                        top: ($i - 1) * 33px;
+                        clip: rect(0, 1000px, 33px, 0px);
+                        transition: clip 0.4s ease-in-out;
+                    }
+                }
+
+                &:first-child {
+                    top: 0;
+                }
+
+                &:last-child {
+                    clip: rect(0, 1000px, 1000px, 0px);
+                }
+                
+
+                &:hover {
+                    z-index: 11;
+                    clip: rect(0, 1000px, 1000px, 0px);
+                    transition: clip 0.4s ease-in-out;
+                }
+
+              
+            }
+
+            @include media-breakpoint-down(sm) {
+                overflow: auto;
+                display: flex;
+                flex-direction: row;
+
+                &>img {
+                    max-width: 200px;
+                    position: relative;
+
+                    @for $i from 1 through 10 {
+                       
+                        &:nth-child(#{$i}) {
+                            top: 0;
+                            // clip: rect(0, 1000px, 33px, 0px);
+                            // transition: clip 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
