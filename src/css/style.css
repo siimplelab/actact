@@ -9872,11 +9872,12 @@ a:hover {
 }
 
 .screen-loading {
-  background: red;
+  overflow: hidden;
+  background: #000;
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 101;
+  z-index: 1001;
 }
 
 .container-1660 {
@@ -10012,6 +10013,11 @@ a:hover {
   top: 25rem;
 }
 
+.screen-loading .actact-logo-animated {
+  top: 50%;
+  margin-top: -184px;
+}
+
 .actact-logo-animated .logo-text {
   position: absolute;
   top: 0;
@@ -10052,6 +10058,30 @@ a:hover {
 
 .content-body {
   position: relative;
+}
+
+.img__actact-logo {
+  max-width: 580px;
+  width: 100%;
+}
+
+.img__daejeonsi-gif {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-loading-big {
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 8.75rem;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  width: 100%;
+  text-align: center;
 }
 
 .page__home .main-item {

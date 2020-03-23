@@ -1,6 +1,9 @@
 // lazy loading
 $(window).on("load", function() {
-    // $('.screen-loading').delay(2500).fadeOut(500);
+    $('.screen-loading').delay(2500).fadeOut(500). $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);;
+   
 });
 
 // scroll to top
