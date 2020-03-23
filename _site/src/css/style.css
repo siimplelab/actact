@@ -9836,6 +9836,10 @@ p {
   border-radius: 12px;
 }
 
+.zindex-1 {
+  z-index: 1;
+}
+
 html,
 body {
   height: 100%;
@@ -9889,6 +9893,13 @@ a:hover {
   margin-right: auto;
 }
 
+.container-1200 {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home-header p {
   font-size: 1.5rem;
 }
@@ -9908,6 +9919,36 @@ a:hover {
   opacity: 0.8;
 }
 
+.close-btn {
+  z-index: 101;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.close-btn:after, .close-btn:before {
+  width: 4px;
+  border-radius: 8px;
+  height: 2rem;
+  background: #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: center;
+}
+
+.close-btn:after {
+  transform: rotate(45deg);
+}
+
+.close-btn:before {
+  transform: rotate(-45deg);
+}
+
 .back-btn {
   position: absolute;
   top: 1rem;
@@ -9924,6 +9965,41 @@ a:hover {
 
 .back-btn a i {
   font-size: 3rem;
+}
+
+.current-page {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.button-navigator a {
+  position: fixed;
+  background-image: url(/src/images/arrow-side-white.svg);
+  background-size: 28px 52px;
+  width: 38px;
+  background-color: #000;
+  height: 62px;
+  top: 50%;
+  margin-top: -26px;
+  z-index: 101;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-navigator a:hover {
+  background-color: #333;
+}
+
+.button-navigator a.prev {
+  left: 1rem;
+}
+
+.button-navigator a.next {
+  right: 1rem;
+  transform: rotate(180deg);
 }
 
 .actact-logo-animated {
@@ -9972,6 +10048,10 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.content-body {
+  position: relative;
 }
 
 .page__home .main-item {
@@ -10135,88 +10215,142 @@ a:hover {
   padding-top: 1.5rem;
 }
 
-.page__exhibition .exhibition-photos .img-container {
-  position: relative;
+@media (max-width: 767.98px) {
+  .page__exhibition .authors-list .authors .author:after {
+    margin-right: 15px;
+    margin-left: 15px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    margin-top: 16px;
+  }
 }
 
-.page__exhibition .exhibition-photos .img-container > img {
-  position: absolute;
+@media (max-width: 767.98px) {
+  .page__exhibition .authors-list .authors .author .author-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page__exhibition .authors-list .authors .author .author-designer {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: right;
+  }
+}
+
+.page__exhibition .exhibition-photos .img-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page__exhibition .exhibition-photos .img-container .img-wrapper {
+  width: 100%;
+  max-height: 33px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page__exhibition .exhibition-photos .img-container .img-wrapper:last-child {
+  overflow: visible;
+  max-height: none;
+}
+
+.page__exhibition .exhibition-photos .img-container .img-wrapper:hover {
+  max-height: none;
+  overflow: visible;
+}
+
+.page__exhibition .exhibition-photos .img-container .img-wrapper:hover ~ div {
+  max-height: 33px !important;
+  overflow: hidden !important;
+}
+
+.page__exhibition .exhibition-photos .img-container img {
   top: 0;
+  margin-top: 0;
   left: 0;
   cursor: pointer;
   max-width: 800px;
   width: 100%;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(1) {
-  top: 0px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(1) {
+  margin-top: 0px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(2) {
-  top: 33px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(2) {
+  margin-top: 33px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(3) {
-  top: 66px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(3) {
+  margin-top: 66px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(4) {
-  top: 99px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(4) {
+  margin-top: 99px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(5) {
-  top: 132px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(5) {
+  margin-top: 132px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(6) {
-  top: 165px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(6) {
+  margin-top: 165px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(7) {
-  top: 198px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(7) {
+  margin-top: 198px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(8) {
-  top: 231px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(8) {
+  margin-top: 231px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(9) {
-  top: 264px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(9) {
+  margin-top: 264px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:nth-child(10) {
-  top: 297px;
+.page__exhibition .exhibition-photos .img-container img:nth-child(10) {
+  margin-top: 297px;
   clip: rect(0, 1000px, 33px, 0px);
   transition: clip 0.4s ease-in-out;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:first-child {
-  top: 0;
+.page__exhibition .exhibition-photos .img-container img:first-child {
+  margin-top: 0;
 }
 
-.page__exhibition .exhibition-photos .img-container > img:last-child {
+.page__exhibition .exhibition-photos .img-container img:last-child {
   clip: rect(0, 1000px, 1000px, 0px);
 }
 
-.page__exhibition .exhibition-photos .img-container > img:hover {
+.page__exhibition .exhibition-photos .img-container img:hover {
   z-index: 11;
   clip: rect(0, 1000px, 1000px, 0px);
   transition: clip 0.4s ease-in-out;
@@ -10227,41 +10361,121 @@ a:hover {
     overflow: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
-  .page__exhibition .exhibition-photos .img-container > img {
-    max-width: 200px;
+  .page__exhibition .exhibition-photos .img-container .img-wrapper {
+    max-height: none;
+    overflow: visible;
+    min-width: 270px;
+    margin-left: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .page__exhibition .exhibition-photos .img-container .img-wrapper:last-child {
+    overflow: visible;
+    max-height: none;
+  }
+  .page__exhibition .exhibition-photos .img-container .img-wrapper:hover {
+    max-height: none;
+    overflow: visible;
+  }
+  .page__exhibition .exhibition-photos .img-container .img-wrapper:hover ~ div {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .page__exhibition .exhibition-photos .img-container img {
+    max-width: 270px;
     position: relative;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(1) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(1) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(2) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(2) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(3) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(3) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(4) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(4) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(5) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(5) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(6) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(6) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(7) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(7) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(8) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(8) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(9) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(9) {
     top: 0;
   }
-  .page__exhibition .exhibition-photos .img-container > img:nth-child(10) {
+  .page__exhibition .exhibition-photos .img-container img:nth-child(10) {
     top: 0;
   }
+}
+
+.img__daejeonsi-blk {
+  width: 350px;
+}
+
+.page__exhibition .img__daejeonsi-blk {
+  position: absolute;
+  right: 0;
+  margin-top: -10rem;
+}
+
+@media (max-width: 991.98px) {
+  .page__exhibition .img__daejeonsi-blk {
+    width: 240px;
+    margin-top: -8rem;
+  }
+}
+
+.modal__img {
+  background-color: #000000;
+}
+
+.modal__img .modal-content {
+  background-color: #000000;
+}
+
+.content-body__work {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.content-body__work h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.content-body__work h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.content-body__work .author {
+  margin-top: 3.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.content-body__work .author .author__name {
+  font-size: inherit;
+}
+
+.content-body__work .author .author__mail {
+  font-size: inherit;
+}
+
+.content-body__work .work__desc {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

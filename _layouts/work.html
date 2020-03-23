@@ -8,49 +8,54 @@
                 </i>
             </a>
         </div> -->
-        <a class="close-btn" href="/exhibitions/{{ page.tags }}">닫기</a>
+        <a class="close-btn" href="/exhibitions/{{ page.tags }}"></a>
     </div>
     <div class="content-body content-body__work px-3">
-        <div class="row">
-            <div class="col-sm-7">
-                <h1>{{ page.title-kr }}</h1>
-                <h2>{{ page.title }}</h2>
-                <p class="author">
-                    <span class="author__name">
-                        {{ page.designer-kr }}, {{ page.designer }}
-                    </span>
-                    <span class="author__mail">
-                        {{ page.designer-email }}
-                    </span>
-                </p>
-                <p class="work__desc">
-                    {{ page.description }}
-                </p>
-            </div>
-            <div class="col-sm-5">
-                <div class="img-work-container">
-                    <img src="{{ page.image-url }}" alt="{{ page.title-kr }}" class="img-fluid">
+        <div class="container-1200">
+            <div class="row">
+                <div class="col-xl-6 mt-4 mt-xl-0 order-xl-0 order-1">
+                    <h1>{{ page.title-kr }}</h1>
+                    <h2>{{ page.title }}</h2>
+                    <p class="author">
+                        <span class="author__name">
+                                {{ page.designer-kr }}, {{ page.designer }}
+                        </span>
+                        <span class="author__mail">
+                            {{ page.designer-email }}
+                        </span>
+                    </p>
+                    <p class="work__desc">
+                        {{ page.description }}
+                    </p>
+                </div>
+                <div class="col-xl-6 order-xl-1 order-0 text-center">
+                    <div class="img-work-container">
+                        <img src="{{ page.work-image-url }}" alt="{{ page.title-kr }}" class="img-fluid">
+                    </div>
                 </div>
             </div>
+            {{ content }}
         </div>
        
-        {{ content }}
     </div>
     <div class="button-navigator">
-        <button class="btn-nav btn-prev-work">
+        <!-- <button class="btn-nav btn-prev-work"> -->
             {% if page.previous.url %}
-            <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+            <!-- <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> -->
+            <a class="prev" href="{{page.previous.url}}"></a>
           {% endif %}
             
-        </buttoh>
-        <button class="btn-nav btn-next-work">
+        <!-- </buttoh> -->
+        <!-- <button class="btn-nav btn-next-work"> -->
             {% if page.next.url %}
-            <a class="prev" href="{{page.next.url}}">&laquo; {{page.next.title}}</a>
-          {% endif %}
-        </buttoh>
+            <a class="next" href="{{page.next.url}}"></a>
+            {% endif %}
+        <!-- </buttoh> -->
     </div>
     <div class="current-page">
-        <span>현재 페이지 / 남은 페이지</span>
+        <span>
+          {{ page.index }}
+            / {{ site.posts | size }}</span>
     </div>
 </div>
 

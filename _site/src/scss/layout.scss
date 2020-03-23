@@ -51,6 +51,15 @@ a:hover {
   margin-right: auto;
 }
 
+
+.container-1200 {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .home-header {
   p {
     font-size: 1.5rem;
@@ -69,6 +78,37 @@ a:hover {
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.close-btn {
+  z-index: 101;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 1rem; 
+  right: 1rem;
+  &:after,
+  &:before {
+    width: 4px;
+    border-radius: 8px;
+    height: 2rem;
+    background: #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+
+  }
+  &:after {
+
+    transform: rotate(45deg);
+  }
+  &:before {
+    transform: rotate(-45deg);
+
   }
 }
 
@@ -94,6 +134,69 @@ a:hover {
     }
   }
   
+}
+
+.current-page {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.button-navigator {
+
+
+  a {
+    position: fixed;
+    background-image: url(/src/images/arrow-side-white.svg);
+    background-size: 28px 52px;
+    width: 38px;
+    background-color: #000;
+    height: 62px;
+    top: 50%;
+    margin-top: -26px;
+    z-index: 101;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-color: #333;
+    }
+    &.prev {
+      left: 1rem;
+    }
+
+    &.next {
+      right: 1rem;
+      transform: rotate(180deg);
+    }
+  }
+
+  // .prev,
+  // .next {
+  //   &:before, 
+  //   &:after {
+  //     position: absolute;
+  //     content: "";
+  //     display: block;
+  //     width: 4px;
+  //     height: 25px;
+  //     border-radius: 8px;
+  //     background: white;
+  //     transform-origin: top left ;
+  //     left: 0;
+  //     top: 0;
+  //   }
+
+  //   &:before {
+  //     transform: rotate(45deg);
+  //   }
+
+  //   &:after {
+  //     transform: rotate(-45deg);
+  //   }
+    
 }
 
 .actact-logo-animated {
@@ -131,4 +234,8 @@ a:hover {
   100% {
     transform: rotate(360deg) ;
   }
+}
+
+.content-body {
+  position: relative;
 }

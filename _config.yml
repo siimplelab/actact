@@ -30,9 +30,20 @@ github_username:  siimplelab
 # Build settings
 plugins:
   - jekyll-feed
-
+  
 collections:
   works:
+paginate_path: "/blog/page:num/"
+
+defaults:
+  - scope:
+      path: "src/images/photos-daejeonsi"
+    values:
+      photos-daejeonsi: true
+  - scope:
+      path: "src/images/works-actact2016"
+    values:
+      works-actact2016: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,34 @@
+.content-body__work  {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    
+    h1 {
+        font-size: 4rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .author {
+        margin-top: 3.75rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        
+        .author__name {
+            font-size: inherit;
+        }
+
+        .author__mail {
+            font-size: inherit;
+        }
+    }
+
+    .work__desc {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 4rem;
+    }
+}
