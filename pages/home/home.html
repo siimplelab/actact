@@ -19,15 +19,6 @@ page-body-class: page__home
       <img src="/src/images/actact-logo-globe.png" alt="actact logo globe">
     </div>
   </div>
-  <div class="img-container invisible position-absolute">
-    {% assign image_files = site.static_files | where: "photos-daejeonsi", true %}
-    {% for myimage in image_files reversed %}
-        <a data-toggle="modal" data-target="#{{ myimage.basename }}" class="img-wrapper">
-            <img class="img-fluid" src=" {{ myimage.path }}" alt=" {{ myimage.basename }}">
-        </a>
-    {% endfor %}
-
-</div>
 </div>
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <div class="home-header">
