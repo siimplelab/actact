@@ -1,6 +1,6 @@
 .page__exhibition {
     .content-header {
-        background: $white;
+        background: $verylight-gray;
         color: $light-black;
         padding-top: 6.25rem;
         padding-bottom: 6.25rem;
@@ -60,17 +60,19 @@
 
             li {
                 padding-right: 1rem;
+                font-size: 1.5rem;
             }
 
         }
 
         p {
             font-weight: 700;
+            font-size: 1.5rem;
         }
     }
 
     .content-body.content-body__authors {
-        background: $white;
+        background: $verylight-gray;
         color: $light-black;
     }
 
@@ -252,6 +254,7 @@
 
 .img__daejeonsi-blk {
     width: 350px;
+    display: none;
 
     .page__exhibition & {
         position: absolute;

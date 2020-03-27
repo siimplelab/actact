@@ -10066,7 +10066,7 @@ a:hover {
 }
 
 .img__daejeonsi-gif {
-  max-width: 300px;
+  max-width: 400px;
   display: block;
   margin: 0 auto;
 }
@@ -10137,7 +10137,7 @@ a:hover {
 }
 
 .page__exhibition .content-header {
-  background: #fff;
+  background: #f5f5f5;
   color: #333;
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
@@ -10200,14 +10200,16 @@ a:hover {
 
 .page__exhibition .content-body.content-body__works ul li {
   padding-right: 1rem;
+  font-size: 1.5rem;
 }
 
 .page__exhibition .content-body.content-body__works p {
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .page__exhibition .content-body.content-body__authors {
-  background: #fff;
+  background: #f5f5f5;
   color: #333;
 }
 
@@ -10450,6 +10452,7 @@ a:hover {
 
 .img__daejeonsi-blk {
   width: 350px;
+  display: none;
 }
 
 .page__exhibition .img__daejeonsi-blk {
