@@ -8,6 +8,14 @@
         .exhibition-logo__daejeonsi {
             max-width: 580px;
             width: 100%;
+
+            &.exhibition-logo__daejeonsi__slogan {
+                margin-top: 2.625rem; 
+            }
+            &.exhibition-logo__daejeonsi--gif {
+                margin-top: 1.9375rem;
+                max-width: 430px;
+            }
         }
     }
     .content-body.content-body__works {

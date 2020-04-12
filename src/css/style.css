@@ -10149,6 +10149,15 @@ a:hover {
   width: 100%;
 }
 
+.page__exhibition .content-header .exhibition-logo__daejeonsi.exhibition-logo__daejeonsi__slogan {
+  margin-top: 2.625rem;
+}
+
+.page__exhibition .content-header .exhibition-logo__daejeonsi.exhibition-logo__daejeonsi--gif {
+  margin-top: 1.9375rem;
+  max-width: 430px;
+}
+
 .page__exhibition .content-body.content-body__works {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
