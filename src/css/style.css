@@ -10073,6 +10073,7 @@ a:hover {
 }
 
 .text-loading-big {
+  word-break: break-all;
   font-weight: 900;
   position: absolute;
   top: 50%;
@@ -10083,6 +10084,12 @@ a:hover {
   line-height: 1;
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .text-loading-big {
+    font-size: 4rem;
+  }
 }
 
 .page__home .main-item {
