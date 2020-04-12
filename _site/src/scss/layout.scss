@@ -117,17 +117,15 @@ a:hover {
 
   position: absolute;
   top: 1rem;
-  background-color: $white;
+  background-color: $black;
 
   a{ 
     
-    color: $black; 
+    color: $white; 
+    display: flex;
 
     &:hover {
-      i {
-        opacity: 0.5; 
-      }
-      
+        opacity: 0.8; 
     }
 
     i {

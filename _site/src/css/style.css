@@ -9953,15 +9953,16 @@ a:hover {
 .back-btn {
   position: absolute;
   top: 1rem;
-  background-color: #fff;
+  background-color: #000;
 }
 
 .back-btn a {
-  color: #000;
+  color: #fff;
+  display: flex;
 }
 
-.back-btn a:hover i {
-  opacity: 0.5;
+.back-btn a:hover {
+  opacity: 0.8;
 }
 
 .back-btn a i {
