@@ -28,10 +28,18 @@
 
         &.main-item--last {
             padding-bottom: 8rem;
+            
+            @include media-breakpoint-down(lg) {
+                margin-top: 4rem;
+            }
         }
 
         &.main-item--first {
             margin-top: 10.25rem;
+
+            @include media-breakpoint-down(lg) {
+                margin-top: 4rem;
+            }
         }
 
         &:hover {
